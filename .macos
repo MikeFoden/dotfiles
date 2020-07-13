@@ -60,6 +60,8 @@ if [ -z "$1" ]
 
     ./update.sh
     ./adblocking.sh
+    ./dracula-themes.sh
+    ./defaults.sh
 
 else
 
