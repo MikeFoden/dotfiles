@@ -60,8 +60,12 @@ if [ -z "$1" ]
 
     ./update.sh
     ./adblocking.sh
-    ./dracula-themes.sh
-    ./defaults.sh
+
+    sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+    git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+    git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+    git clone https://github.com/lukechilds/zsh-better-npm-completion ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/zsh-better-npm-completion
+    git clone https://github.com/zdharma/fast-syntax-highlighting.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/fast-syntax-highlighting
 
 else
 
@@ -73,6 +77,8 @@ fi
 
 ./brew.sh
 ./appstore.sh
+./dracula-themes.sh
+./defaults.sh
 
 cd ..
 

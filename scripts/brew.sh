@@ -8,7 +8,9 @@ brew update
 brew upgrade
 
 brew install bat
+brew install gpg2
 brew install watchman
+brew install youtube-dl
 
 echo ""
 echo "~~~~~~~~~~~~~~~~~~~~~"
@@ -27,6 +29,7 @@ brew cask install docker
 brew cask install epic-games 
 brew cask install firefox 
 brew cask install gitahead
+brew cask install gpg-suite-no-mail
 brew cask install google-chrome
 brew cask install hstracker 
 brew cask install iterm2
@@ -35,6 +38,7 @@ brew cask install jetbrains-toolbox
 brew cask install parallels
 brew cask install qlvideo
 brew cask install raindropio
+brew cask install screenresx
 brew cask install slack
 brew cask install spotify
 brew cask install steam 
