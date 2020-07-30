@@ -32,13 +32,15 @@ brew cask install gitahead
 brew cask install gpg-suite-no-mail
 brew cask install google-chrome
 brew cask install hstracker 
+brew cask install insomnia
 brew cask install iterm2
 brew cask install itsycal 
 brew cask install jetbrains-toolbox 
+brew cask install keepingyouawake
 brew cask install parallels
+brew cask install pocket-casts
 brew cask install qlvideo
 brew cask install raindropio
-brew cask install screenresx
 brew cask install slack
 brew cask install spotify
 brew cask install steam 

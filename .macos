@@ -80,6 +80,10 @@ fi
 ./dracula-themes.sh
 ./defaults.sh
 
+cd "${HOME}/Library"
+mkdir KeyBindings
+cp "${HOME}/dotfiles/files/DefaultKeyBinding.dict" "${HOME}/Library/KeyBindings/"
+
 cd ..
 
 if [ -z "$1" ]

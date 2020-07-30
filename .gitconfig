@@ -1,0 +1,14 @@
+[user]
+	email = mike@mikefoden.com
+	name = Mike Foden
+[alias]
+    amend = !git commit --amend --no-edit
+    deliver = !git push --set-upstream origin $(git rev-parse --abbrev-ref HEAD) && rundll32 url.dll,FileProtocolHandler https://bitbucket.org/moula/moula2/pull-requests/new
+    boom = !git fetch origin --prune && git branch -vv | grep 'origin/.*: gone]' | awk '{print $1}' | xargs git branch -D
+    scrub = !git clean -fx
+    memaster = !git fetch origin && git reset --hard HEAD && git checkout master && git pull
+    memain = !git fetch origin && git reset --hard HEAD && git checkout main && git pull
+    pullpush = !git pull && git push
+
+	ignore = "!f() { for arg in \"$@\"; do echo \"$arg\" >> .gitignore; done; git add .gitignore 2>/dev/null; }; f"
+	exclude = "!f() { for arg in \"$@\"; do echo \"$arg\" >> \"$(git rev-parse --git-dir)/info/exclude\"; done; }; f"
